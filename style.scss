@@ -2,34 +2,34 @@
 
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: 354570;
-    font-family: "Inter", sans-serif;
+margin: 0;
+padding: 0;
+background-color: #fff;
+font-family: "Inter", sans-serif;
 }
 
 .webpage-title {
-    font-size: 5rem;
-    color: #354570;
-    text-align: center;
-    margin-top: 2rem;
+font-size: 5rem;
+color: #354570;
+text-align: center;
+margin-top: 2rem;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
-.brick-map-container {
-    display: flex;
-    width: 85%;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5rem;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+#brick-map-container {
+display: flex;
+width: 85%;
+justify-content: center;
+align-items: center;
+margin-bottom: 5rem;
+opacity: 0;
+transition: opacity 1s ease-in-out;
 }
 
 #loading {
@@ -40,15 +40,22 @@ body {
     color: #354570;
     text-align: center;
     margin: 2rem auto;
-  }
-
   
-  .brick-map-container.visible {
-    opacity: 1;
+    &.hidden {
+      display: none;
+    }
   }
   
-  .hidden {
-    display: none;
+  #brick-map-container {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  
+    &.visible {
+      opacity: 1;
+    }
   }
   
   @keyframes fadeIn {
@@ -56,5 +63,4 @@ body {
       opacity: 1;
     }
   }
-  
-  
+
