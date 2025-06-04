@@ -28,5 +28,33 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 5rem;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
+
+#loading {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #354570;
+    text-align: center;
+    margin: 2rem auto;
+  }
+
+  
+  .brick-map-container.visible {
+    opacity: 1;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
   
