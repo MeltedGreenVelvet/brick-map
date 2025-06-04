@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: 354570;
+  font-family: "Inter", sans-serif;
+}
+
+.webpage-title {
+  font-size: 5rem;
+  color: #354570;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.brick-map-container {
+  display: flex;
+  width: 85%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}/*# sourceMappingURL=style.css.map */
